@@ -1,0 +1,17 @@
+.layout-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'sidebar content content content' 'footer footer footer footer';
+    grid-template-rows: calc(100vh - 100px) 100px;
+    ;
+    &__sidebar {
+        grid-area: sidebar;
+    }
+    &__content {
+        grid-area: content;
+    }
+    &__footer {
+        grid-area: footer;
+    }
+}
